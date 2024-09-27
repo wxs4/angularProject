@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./empleado.component.css']
 })
 export class EmpleadoComponent {
+  nombre="william";
+  apellido="sanchez";
+  private edad=25;
+  empresa="encora";
+
+  getedad(){
+    return this.edad;
+  }
 
 }
