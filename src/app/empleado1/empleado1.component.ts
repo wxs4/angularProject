@@ -9,5 +9,5 @@ export class Empleado1Component {
 nombre="juan";
 apellido="james";
 edad=29;
-empresa="brazzers"
+empresa="brazzers";
 }

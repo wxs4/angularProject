@@ -2,4 +2,22 @@
 <p>Nombre: {{nombre}}</p>
 <p>Apellido: {{apellido}}</p>
 <p>edad: {{getedad()+5}}</p>
+
 <p>empresa: {{empresa}}</p>
+<!--<b>Insert the company: </b><input placeholder="Ingresa tu empresa" type="text" #empresa (keyup)="0" [disabled]="habilitarCaja">-->
+
+<b>Insert the company</b><input type="text" [(ngModel)="empresa"] >
+
+<br/>
+<br/>
+<!--<input type="button" value="GO" (click)="llamaEmpresa(empresa.value)">-->
+
+{{registerText}} <br>
+<!--Registred: <input type="checkbox"[checked]="userRegistred" (click)="setUserRegistred()">-->
+Registred: <input type="radio" value="si"name="register" [checked]="userRegistred" (click)="setUserRegistred($event)"><br>
+No Registred: <input type="radio" value="no" name="register" (click)="setUserRegistred($event)">
+
+{{activeCheck()}}
+
+<br>
+<br>
